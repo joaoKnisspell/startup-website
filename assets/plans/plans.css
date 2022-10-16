@@ -1,0 +1,106 @@
+@import url(../header.css);
+@import url(../reset.css);
+@import url(../rodape.css);
+@import url(../portfolio/portfolio.css);
+
+body{
+    font-family: var(--fonte-pricipal);
+}
+
+.principal{
+    padding: 1em;
+}
+
+.card{
+    text-align: center;
+    box-shadow: 3px 4px 12px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    padding: 2.5em 2em;
+    margin: 0 auto 3em auto;
+    width: auto;
+    box-sizing: border-box;
+}
+
+.tipo{
+    font-size: 15px;
+}
+
+.preco__card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:0.5em;
+    margin:0.5em 0 1em 0;
+}
+
+.preco{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.card__descricao, .parcela{
+    color: rgba(33, 37, 41, 0.5);
+}
+
+.card__descricao{
+    line-height: 1.2em;
+}
+
+.card__list{
+    display: flex;
+    gap:0.5em;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 2.5em;
+}
+
+.list__item{
+    display:flex;
+    align-items:center;
+    gap: 0.5em;
+}
+
+.works-btn{
+    margin:2em 0 0 0;
+}
+
+@media screen and (min-width:1024px){
+    .principal{
+        padding: 0em;
+        margin: 2% 9%;
+    }
+
+    .cards__container{
+        display: flex;
+        justify-content: center;
+        gap:1.5em;
+    }
+    .card{
+        padding: 2.5em 1em;
+    }
+}
+
+@media screen and (min-width:1440px){
+    .principal{
+        margin: 3% 10%;
+    }
+
+    .cards__container{
+        gap:2em;
+        justify-content: space-between;
+    }
+
+    .card{
+        padding: 2.5em 2em;
+    }
+
+}
+
+@media screen and (min-width:1700px){
+
+    .card{
+        gap:0;
+        width: 400px;
+    }
+
+}
